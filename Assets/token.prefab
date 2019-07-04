@@ -106,7 +106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39cccce29e7b83c4187c6cc2a2ebb3d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedVec: {x: 0, y: 0, z: -10}
+  speedVec: {x: 0, y: 0, z: -30}
   valPos:
   - {x: -1.2, y: -0.15, z: 100}
   - {x: -0.4, y: -0.15, z: 100}
@@ -118,7 +118,15 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 0954cc5f14995a14d94581112034fde7, type: 2}
   - {fileID: 2100000, guid: 742ff0173a0927f449815bc5d560f231, type: 2}
   valSe:
-  - {fileID: 8300000, guid: 3bb136e4c53861b49a5cc9cbae7138d8, type: 3}
+  - {fileID: 8300000, guid: 5a6f0fe4fd3540b4e8a3aff86b11e7c4, type: 3}
+  - {fileID: 8300000, guid: c98c8c998fde4d541b3fa6da9da8907b, type: 3}
+  - {fileID: 8300000, guid: a1e5c9a70c2928b4e92ab4aa094c60f1, type: 3}
+  - {fileID: 8300000, guid: 34cd6857016253943a29e105f6c7abb9, type: 3}
+  - {fileID: 8300000, guid: 040724b1beb83264fb379eb3e8c240ba, type: 3}
+  bmp: 4
+  setHit: 0
+  setSpeed: 0.1
+  setPos: {x: 10, y: 3, z: 0}
 --- !u!54 &2515412882213300844
 Rigidbody:
   m_ObjectHideFlags: 0
