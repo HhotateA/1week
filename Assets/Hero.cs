@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Hero : MonoBehaviour
 {
-    private int val = 0;
-    [SerializeField]private Vector3[] valPos = new Vector3[4];
+    [SerializeField] private int val = 0;
+    [SerializeField] private Vector3[] valPos = new Vector3[4];
     // Start is called before the first frame update
     void Start()
     {
