@@ -56,7 +56,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _spect:
-        m_Texture: {fileID: 8600000, guid: cdc968dcb58c7f24f8690840440efa8c, type: 2}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 0.05, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -67,6 +67,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
+    - _Intensity: 2
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -79,4 +80,4 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _color: {r: 11.470784, g: 2.462315, b: 10.046454, a: 0}
+    - _color: {r: 1.4980392, g: 0.32941177, b: 1.3254902, a: 0}

@@ -16,6 +16,13 @@ public class Hero : MonoBehaviour
     void Update()
     {
         transform.localPosition = valPos[val];
+        
+        if (Input.GetKeyDown (KeyCode.LeftArrow)) {
+            leftBpt();
+        }
+        if (Input.GetKeyDown (KeyCode.RightArrow)) {
+            rightBot();
+        }
     }
 
     public void rightBot(){
@@ -23,5 +30,15 @@ public class Hero : MonoBehaviour
     }
     public void leftBpt(){
         val = Mathf.Clamp(val-1,0,3);
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        string layerName = LayerMask.LayerToName(other.gameObject.layer);
+
+        if( layerName == "token")
+        {
+            Destroy(gameObject);
+        }
     }
 }

@@ -4,6 +4,7 @@
     {
         _spect ("Texture", 2D) = "white" {}
         [HDR]_color ("color",color) = (0.,0.,0.,0.)
+        _Intensity ("Intensity",range(0.0,10.0)) = 1.0
     }
     SubShader
     {
@@ -34,6 +35,7 @@
             sampler2D _spect;
             float4 _spect_ST;
             float4 _color;
+            float _Intensity;
 
             v2f vert (appdata v)
             {
@@ -51,7 +53,7 @@
                 fixed4 col = _color;
                 // apply fog
                 UNITY_APPLY_FOG(i.fogCoord, col);
-                return col;
+                return col*_Intensity;
             }
             ENDCG
         }
