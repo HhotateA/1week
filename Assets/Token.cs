@@ -37,19 +37,19 @@ public class Token : MonoBehaviour
         rigidBody.velocity = speedVec;
         switch(layline){
             case 0: audioSource.clip = valSe0[Random.Range(0,valSe0.Length-1)];
-                    audioSource.volume = 0.25f;
+                    audioSource.volume = 0.4f;
                     lifetime = 0.1f;
                     break;
             case 1: audioSource.clip = valSe1[Random.Range(0,valSe1.Length-1)];
-                    audioSource.volume = 0.2f;
+                    audioSource.volume = 0.3f;
                     lifetime = 0.01f;
                     break;
             case 2: audioSource.clip = valSe2[Random.Range(0,valSe2.Length-1)];
-                    audioSource.volume = 0.3f;
+                    audioSource.volume = 0.5f;
                     lifetime = 0.001f;
                     break;
             case 3: audioSource.clip = valSe3[Random.Range(0,valSe3.Length-1)];
-                    audioSource.volume = 0.25f;
+                    audioSource.volume = 0.4f;
                     lifetime = 0.05f;
                     break;
         }
